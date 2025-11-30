@@ -3,6 +3,16 @@
 @section('title', 'Dashboard')
 
 @section('content')
+<div class="flex justify-end mb-4">
+  <form action="{{ route('logout') }}" method="POST">
+    @csrf
+    <button 
+      class="px-4 py-2 bg-gradient-to-r from-red-500 to-red-600 text-white rounded-lg shadow hover:shadow-md">
+      Logout
+    </button>
+  </form>
+</div>
+
   <!-- Header -->
   <div class="mb-8">
     <div class="flex items-center space-x-3 mb-2">
